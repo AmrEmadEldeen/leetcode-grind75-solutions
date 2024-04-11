@@ -23,6 +23,7 @@ class Solution {
                 // compare between chars to validate Palindrome
                 if (chkStr.charAt(i) != chkStr.charAt(j)) {
                     flag = false;
+                    break;
                 }
                 i++;
                 j--;
@@ -35,6 +36,7 @@ class Solution {
                 // compare between chars to validate Palindrome
                 if (chkStr.charAt(i) != chkStr.charAt(j)) {
                     flag = false;
+                    
                 }
                 i++;
                 j--;
