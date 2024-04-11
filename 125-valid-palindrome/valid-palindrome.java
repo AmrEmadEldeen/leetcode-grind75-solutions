@@ -16,27 +16,25 @@ class Solution {
         // length of the string after formatting.
         len = chkStr.length();
         j = len - 1;
-        // check if the length is even or odd then itirate from the begining and end of
+        // check if the length is even then itirate from the begining and end of
         // the string .
         if (len % 2 == 0) {
             while (i < (len / 2) && j >= (len / 2)) {
                 // compare between chars to validate Palindrome
                 if (chkStr.charAt(i) != chkStr.charAt(j)) {
                     flag = false;
-                    break;
                 }
                 i++;
                 j--;
             }
         }
-        // check if the length is even or odd then itirate from the begining and end of
+        // check if the length is odd then itirate from the begining and end of
         // the string .
         else {
             while (i < (len / 2) && j > (len / 2)) {
                 // compare between chars to validate Palindrome
                 if (chkStr.charAt(i) != chkStr.charAt(j)) {
                     flag = false;
-                    break;
                 }
                 i++;
                 j--;
